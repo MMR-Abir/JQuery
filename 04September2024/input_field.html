@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+   <form action="" method="post">
+    <input type="text" class="first" name="" placeholder="Enter Your First Name"> <br>
+    <input type="text" class="last" name="" placeholder="Enter Your Last Name"> <br>
+    <button id="btn1" type="button">Concat</button>
+    <h1 id="ll"></h1>
+    <textarea name="" class="hh" id=""></textarea>
+
+    
+   </form>
+
+    
+    <script>
+    //    $(function(){
+    //     $("input").focus(function(){
+    //         $(this).css("background-color","yellow")
+    //     })
+
+    //     $("input").blur(function(){
+    //         $(this).css("background-color","green")
+    //     })
+    //    })
+
+
+    $(function(){
+        // $("#btn1").click(function(){
+        //     let n = $(".first").val();
+        //     let m = $(".last").val();
+        //     let o = n +" "+ m;
+        //    // alert(o);
+        //   // $("#ll").text(o);
+        //   $(".hh").text(o);
+
+        //     //alert(n);
+        // });
+
+        // $("#btn1").click(function(){
+        //     let m = $(".last").val();
+        //     // alert(m);
+        // });
+
+        // $("#btn1").click(function(){
+        //     let o = $(n + m).val();
+        //     alert(o);
+        // })
+
+        $("#btn1").click(function(){
+            let n = $(".first").val();
+            
+           // alert(n);
+        })
+
+         $("#btn1").click(function(){
+            let m = $(".last").val();
+            //alert(m);
+        })
+
+        $("#btn1").click(function(){
+           // let o = (n +" "+ m);
+             let o = $(".first").val() +" " + $(".last").val();
+            // let o = (n + m) ;
+            alert(o);
+        })
+
+
+    });
+
+
+
+    </script>
+</body>
+</html>
