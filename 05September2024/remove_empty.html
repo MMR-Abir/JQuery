@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+
+    <style>
+        .p1 {
+            color: rgb(192, 18, 18)
+        };
+    </style>
+</head>
+<body>
+
+    <div class="p1">
+        <p>Div With class</p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi tenetur facere, accusamus nulla eius saepe, nobis commodi deserunt illo atque ea impedit aspernatur exercitationem ut repellat libero quo vitae repellendus.
+    </div>
+
+    <div>
+
+        <p>Div Without class</p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi tenetur facere, accusamus nulla eius saepe, nobis commodi deserunt illo atque ea impedit aspernatur exercitationem ut repellat libero quo vitae repellendus.
+    </div>
+
+    <button class="btn1">REMOVE</button>
+    <button class="btn2">EMPTY</button>
+    <script>
+        $(function(){
+            $(".btn1").click(function(){
+                $("div").remove(".p1");
+            })
+
+            $(".btn2").click(function(){
+                $("div").empty();
+            })
+        })
+    </script>
+</body>
+</html>

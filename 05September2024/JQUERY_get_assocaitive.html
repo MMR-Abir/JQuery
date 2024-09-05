@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY GET Method</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <form action="" >
+        <select name="" id="" class="dist"  >
+            <option value="">Select one</option>
+            <option value="1">Dhaka</option>
+            <option value="2">Rajshahi</option>
+            <option value="3">Cumilla</option>
+            <option value="4">Khulna</option>
+        </select> 
+        <button class="btn1" type="button">Click Here</button>
+    </form>
+
+    <div class="row">
+
+    </div>
+
+    
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+
+             let distid =   $(".dist").val();
+
+             //alert(distid);
+               $.get("get_data.php",{id:distid},function(data){
+                $(".row").html(data);
+                   // alert(data);
+               })
+            })
+        })
+    </script>
+</body>
+</html>
