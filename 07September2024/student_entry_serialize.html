@@ -47,13 +47,14 @@
                $.post("insert.php", {mydata:take}, function(data, status){
                 //alert(data);
 
-                
+                $(".show").load("student.php");
                })
-               $(".show").load("student.php");
+               
                 
             })
             
-
+            
+          
         })
     </script>
 </body>
